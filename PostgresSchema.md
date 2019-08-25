@@ -44,7 +44,7 @@ C7p | integer[] | common prime-to-7 part of A and B
 
 **Table** `hgm_monodromy`:
 
-This table stores information for mod-ell monodromy groups associated to hypergeomtric families.  The ambient polar space referred to below is the quadratic or symplectic space defineed by the Bezout matrix and is determined up to isometry by the degree, weight, dimension of the radical, dimension of the maximal isotropic space, and the Witt index (in fact the parity of the last two invariants suffice, and in odd characteristic only one of them is needed)
+This table stores information for mod-ell monodromy groups associated to hypergeomtric families.  The ambient polar space referred to below is the quadratic or symplectic space over F_ell determined by the Bezout matrix; it is determined up to isometry by the degree, weight, dimension of the radical, dimension of the maximal isotropic, and the Witt index (in fact the parity of the last two invariants suffice, and in odd characteristic only one of them is needed).
 
 Column | Type | Notes
 -------|------|------
