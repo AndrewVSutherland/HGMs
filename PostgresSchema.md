@@ -20,26 +20,26 @@ A2 | integer[] | 2-part of A
 A3 | integer[] | 3-part of A
 A5 | integer[] | 5-part of A
 A7 | integer[] | 7-part of A
-A2p | integer[] | prime-to-2 part of A
-A3p | integer[] | prime-to-3 part of A
-A5p | integer[] | prime-to-5 part of A
-A7p | integer[] | prime-to-7 part of A
+Au2 | integer[] | prime-to-2 part of A
+Au3 | integer[] | prime-to-3 part of A
+Au5 | integer[] | prime-to-5 part of A
+Au7 | integer[] | prime-to-7 part of A
 B2 | integer[] | 2-part of B
 B3 | integer[] | 3-part of B
 B5 | integer[] | 5-part of B
 B7 | integer[] | 7-part of B
-B2p | integer[] | prime-to-2 part of B
-B3p | integer[] | prime-to-3 part of B
-B5p | integer[] | prime-to-5 part of B
-B7p | integer[] | prime-to-7 part of B
+Bu2 | integer[] | prime-to-2 part of B
+Bu3 | integer[] | prime-to-3 part of B
+Bu5 | integer[] | prime-to-5 part of B
+Bu7 | integer[] | prime-to-7 part of B
 C2 | integer[] | common 2-part of A and B
 C3 | integer[] | common 3-part of A and B
 C5 | integer[] | common 5-part of A and B
 C7 | integer[] | common 7-part of A and B
-C2p | integer[] | common prime-to-2 part of A and B
-C3p | integer[] | common prime-to-3 part of A and B
-C5p | integer[] | common prime-to-5 part of A and B
-C7p | integer[] | common prime-to-7 part of A and B
+Cu2 | integer[] | common prime-to-2 part of A and B
+Cu3 | integer[] | common prime-to-3 part of A and B
+Cu5 | integer[] | common prime-to-5 part of A and B
+Cu7 | integer[] | common prime-to-7 part of A and B
 
 
 **Table** `hgm_monodromy`:
@@ -52,9 +52,9 @@ A | integer[] | list of integers giving the A parameters of the hypergeometric f
 B | integer[] | list of integers giving the B parameter of the hyeprgeometric family
 family | string | label of a hypergoemetric family
 ell | integer | a prime ell
-A_local | integer[] | list of integers giving the prime to ell part of A
-B_local | integer[] | list of integers giving the prime to ell part of B
-C_local | integer[] | list of integers giving the common part of A_local and B_local
+Au | integer[] | list of integers giving the prime to ell part of A
+Bu | integer[] | list of integers giving the prime to ell part of B
+Cu | integer[] | list of integers giving the common part of A_local and B_local
 degree | integer | degree d of the hypergeometric family (the mod-ell monodromy group is a subgroup of GL_d(F_ell))
 weight | integer | weight of the hypergeometric family
 type | integer | weight mod 2, determines type of ambient polar space V (0=orthogonal, 1=symplectic)
