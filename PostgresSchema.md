@@ -1,7 +1,4 @@
-Spaces
-======
-
-**Table** `mf_families`:
+**Table** `hgm_families`:
 
 This table stores information for hypergeomtric families, each determined by hypergeometric data A,B (lists of integers)
 
@@ -39,8 +36,41 @@ C2 | integer[] | common 2-part of A and B
 C3 | integer[] | common 3-part of A and B
 C5 | integer[] | common 5-part of A and B
 C7 | integer[] | common 7-part of A and B
-C2p | integer[] | prime-to-2 complement of C2
-C3p | integer[] | prime-to-3 complement of C3
-C5p | integer[] | prime-to-5 complement of C5
-C7p | integer[] | prime-to-7 complement of C7
+C2p | integer[] | common prime-to-2 part of A and B
+C3p | integer[] | common prime-to-3 part of A and B
+C5p | integer[] | common prime-to-5 part of A and B
+C7p | integer[] | common prime-to-7 part of A and B
+
+
+**Table** `hgm_monodromy`:
+
+This table stores information for mod-ell monodromy groups associated to hypergeomtric families.  The ambient polar space referred to below is the quadratic or symplectic space defineed by the Bezout matrix and is determined up to isometry by the degree, weight, dimension of the radical, dimension of the maximal isotropic space, and the Witt index (in fact the parity of the last two invariants suffice, and in odd characteristic only one of them is needed)
+
+Column | Type | Notes
+-------|------|------
+A | integer[] | list of integers giving the A parameters of the hypergeometric family
+B | integer[] | list of integers giving the B parameter of the hyeprgeometric family
+family | string | label of a hypergoemetric family
+ell | integer | a prime ell
+A_local | integer[] | list of integers giving the prime to ell part of A
+B_local | integer[] | list of integers giving the prime to ell part of B
+C_local | integer[] | list of integers giving the common part of A_local and B_local
+degree | integer | degree d of the monodromy group (ambient isotropy group will live in GL_d(F_ell)
+weight | integer | weight of the hypergeometric family (parity of weight determines type)
+type | integer | weight mod 2, determines type of ambient polar space (0=orthogonal, 1=symplectic)
+radical_dim | integer | dimension of the radical of the ambient polar space
+isotropic_dim | integer | dimension of maximal isotropic subspace of the ambient polar space
+witt_index | integer | half the dimension of maximal hyperbolic subspace of the ambient polar space
+ambient_order | integer[] | factored order of the ambient isotropy group G (list of pairs [p,e] with e=v_p(#G) > 0)
+monodromy_order | integer[] | factored order of the monodromy group H
+monodromy_index | integer[] | factored index [G:H] of the monodromy group H in G
+ambient_gens | integer[] | list of lists of lists of integers specifying d x d F_ell-matrix generators of G
+monodromy_gens | itneger[] | pair of lists of lists of integers specifying d x d F_ell-matrices generators A,B of H
+ambient_name | string | name of isotropy group of ambient polar space (e.g. Sp_8(F_3) or O_4+(F_7), ...)
+ambient_matrix_group_label | string | label of the matrix group G (when it becomes available in the finite groups DB)
+ambient_group_label | string | label of the abstract group G (when available in the finite group DB), e.g. S_6
+monodromy_matrix_group_label | string | label of the monodromy group H (when it becomes available in the finite groups DB)
+monodromy_group_label | string | label of the abstract group H (when availalbe in the finite group DB)
+
+
 
