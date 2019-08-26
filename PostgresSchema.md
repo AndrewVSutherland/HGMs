@@ -12,7 +12,7 @@ weight | integer | motivic weight of the family (width of the Hodge vector)
 hodge_vector | integer[] | hodge vector for the family (previously famhodge)
 hodge_structure | integer[] | list of list of integers giving Hodge structure (in Magma format, details TDB)
 bezout_matrix | integer[] | list of list of integers of Bezout matrix (d x d) (previously bezout)
-bezout_determinant | integer | determinant of the Bezout matrix (previously det)
+bezout_det | integer | determinant of the Bezout matrix (previously det)
 bezout_module | integer[] | invariants of the Bezout module (as an abelian group = Z-module) (previously snf)
 rotation_number | integer | rotation number (previously imprim = imprimitivity index)
 wild_primes | integer[] | list of wild primes 
@@ -58,6 +58,7 @@ Cu | integer[] | list of integers giving the common part of A_local and B_local
 degree | integer | degree d of the hypergeometric family (the mod-ell monodromy group is a subgroup of GL_d(F_ell))
 weight | integer | weight of the hypergeometric family
 type | integer | weight mod 2, determines type of ambient polar space V (0=orthogonal, 1=symplectic)
+bezout_det | integer | determinant of Bezout matrix modulo ell
 radical_dim | integer | dimension of the radical of V
 isotropic_dim | integer | dimension of maximal isotropic subspace of V
 witt_index | integer | half the dimension of maximal hyperbolic subspace of V
