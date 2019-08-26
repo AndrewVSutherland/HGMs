@@ -68,7 +68,7 @@ ambient_gens | integer[] | list of lists of lists of integers specifying d x d F
 monodromy_gens | itneger[] | pair of lists of lists of integers specifying d x d F_ell-matrices generators A,B of H
 ambient_name | string | name of isotropy group of ambient polar space (e.g. Sp_8(F_3) or O_4+(F_7), ...)
 ambient_matrix_group_label | string | label of the matrix group G (when it becomes available in the finite groups DB)
-ambient_group_label | string | label of the abstract group G (when available in the finite group DB), e.g. S_6
+ambient_group_label | string | label of the abstract group G (when available in the finite group DB)
 monodromy_matrix_group_label | string | label of the monodromy group H (when it becomes available in the finite groups DB)
 monodromy_group_label | string | label of the abstract group H (when availalbe in the finite group DB)
 
