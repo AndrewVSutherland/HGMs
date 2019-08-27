@@ -15,6 +15,7 @@ bezout_matrix | integer[] | list of list of integers of Bezout matrix (d x d) (p
 bezout_det | integer | determinant of the Bezout matrix (previously det)
 bezout_module | integer[] | invariants of the Bezout module (as an abelian group = Z-module) (previously snf)
 rotation_number | integer | rotation number (previously imprim = imprimitivity index)
+variety_dim | integer | dimension of the canonical variety
 wild_primes | integer[] | list of wild primes 
 A2 | integer[] | 2-part of A
 A3 | integer[] | 3-part of A
