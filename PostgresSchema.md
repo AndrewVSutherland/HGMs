@@ -1,6 +1,6 @@
 **Table** `hgm_families`:
 
-This table stores information for hypergeomtric families, each determined by hypergeometric data A,B (lists of integers)
+This table stores information for hypergeometric families, each determined by hypergeometric data A,B (lists of integers)
 
 Column | Type | Notes
 -------|------|------
