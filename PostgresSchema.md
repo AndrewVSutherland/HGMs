@@ -62,8 +62,10 @@ bezout_det | integer | determinant of Bezout matrix modulo ell
 radical_dim | integer | dimension of the radical of V
 isotropic_dim | integer | dimension of maximal isotropic subspace of V
 witt_index | integer | half the dimension of maximal hyperbolic subspace of V
-ambient_order | integer[] | factored order of the ambient isotropy group G of V (list of pairs [p,e] with e=v_p(#G) > 0)
-monodromy_order | integer[] | factored order of the monodromy group H
+ambient_order | integer | order of the ambient isotropy group G of V (list of pairs [p,e] with e=v_p(#G) > 0)
+ambient_order_facctored | integer[] | factored order of the ambient isotropy group G of V (list of pairs [p,e] with e=v_p(#G) > 0)
+monodromy_order | integer | order of the monodromy group H
+monodromy_order_factored | integer[] | factored order of the monodromy group H
 monodromy_index | integer[] | factored index [G:H] of the monodromy group H in G
 ambient_gens | integer[] | list of lists of lists of integers specifying d x d F_ell-matrix generators of G
 monodromy_gens | itneger[] | pair of lists of lists of integers specifying d x d F_ell-matrices generators A,B of H
