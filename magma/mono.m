@@ -20,11 +20,12 @@ hgm_monodromy_columns := [
     ["radical_dim","integer"],
     ["isotropic_dim","integer"],
     ["witt_index","integer"],
-    ["ambient_order","integer"],
+    ["ambient_order","numeric"],
     ["ambient_factored_order","integer[]"],
-    ["monodromy_order","integer"],
-    ["ambient_factored_order","integer[]"],
-    ["monodromy_index","integer[]"],
+    ["monodromy_order","numeric"],
+    ["monodromy_factored_order","integer[]"],
+    ["monodromy_index","numeric"],
+    ["monodromy_factored_index","integer[]"],
     ["ambient_gens","integer[]"],
     ["monodromy_gens","integer[]"],
     ["ambient_name","text"],
@@ -72,12 +73,12 @@ function monodromy_record(A,B,ell:ambient_order:=0,monodromy_order:=0)
     rec["monodromy_gens"] := str([[Eltseq(r):r in Rows(g)]:g in Generators(mono)]);
     if ambient_order eq 0 then ambient_order := #ambi; end if; // this could take a while
     if monodromy_order eq 0 then monodromy_order := #mono; end if; // this could take a while
-    print deg,wt,rad,iso,witt,ambient_order,rec["ambient_name"];
     rec["ambient_order"] := str(ambient_order);
     rec["ambient_factored_order"] := str(Factorization(ambient_order));
     rec["monodromy_order"] := str(monodromy_order);
     rec["monodromy_factored_order"] := str(Factorization(monodromy_order));
-    rec["monodromy_index"] := str(Factorization(ExactQuotient(ambient_order,monodromy_order)));
+    rec["monodromy_index"] := str(ExactQuotient(ambient_order,monodromy_order));
+    rec["monodromy_factored_index"] := str(Factorization(ExactQuotient(ambient_order,monodromy_order)));
     rec["ambient_matrix_group_label"] := "\\N";
     rec["ambient_group_label"] := small_group_order(ambient_order) select Sprintf("%o.%o",gid[1],gid[2]) where gid := IdentifyGroup(ambi) else "\\N";
     rec["monodromy_matrix_group_label"] := "\\N";
