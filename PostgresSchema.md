@@ -45,13 +45,13 @@ Cu7 | integer[] | common prime-to-7 part of A and B
 
 **Table** `hgm_monodromy`:
 
-This table stores information for mod-ell monodromy groups associated to hypergeomtric families.  The ambient polar space V referred to below is the quadratic or symplectic space over F_ell determined by the Bezout matrix; it is determined up to isometry by the degree, weight, dimension of the radical, dimension of the maximal isotropic, and the Witt index (in fact the parity of the last two invariants suffice, and in odd characteristic only one of them is needed).
+This table stores information for mod-ell monodromy groups associated to hypergeometric families.  The ambient polar space V referred to below is the quadratic or symplectic space over F_ell determined by the Bezout matrix; it is determined up to isometry by the degree, weight, dimension of the radical, dimension of the maximal isotropic, and the Witt index (in fact the parity of the last two invariants suffice, and in odd characteristic only one of them is needed).
 
 Column | Type | Notes
 -------|------|------
 A | integer[] | list of integers giving the A parameters of the hypergeometric family
-B | integer[] | list of integers giving the B parameter of the hyeprgeometric family
-family | string | label of a hypergoemetric family
+B | integer[] | list of integers giving the B parameter of the hypergeometric family
+family | string | label of a hypergeometric family
 ell | integer | a prime ell
 Au | integer[] | list of integers giving the prime to ell part of A
 Bu | integer[] | list of integers giving the prime to ell part of B
